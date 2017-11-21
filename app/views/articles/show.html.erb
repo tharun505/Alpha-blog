@@ -1,17 +1,18 @@
-<h1>
-  The article created
-</h1>
+<h2 align="center"> Title: <u><%= @article.title %></u>
+</h2>
+   <div class="well-col-xs-8 col-xs-offset-2">
+      <h4 class ="description"><strong> Description:</strong>
+                          
+      </h4>
+      <hr>  
+      
+         <%= simple_format(@article.description) %>
+  
+          <div class="article-actions">
+         
+  <%= link_to 'back to list',articles_path,class: "btn btn-md btn-primary" %>
+  <%= link_to 'edit',edit_article_path(@article),class: "btn btn-md btn-success" %>
+  <%= link_to 'delete',edit_article_path(@article),method: :destroy, data: {confirm: "Are you sure to delete the article"} ,class: "btn btn-md btn-danger" %>
+          </div>
+  </div>
 
-<p>
- Title: <%= @article.title %>
- 
-</p>
-
-<p>
-  Description: <%=@article.description %>
-</p>
-
-<p>
-  <%= link_to 'back to list',articles_path %> ||
-  <%= link_to 'edit article',edit_article_path(@article) %>
-</p>
