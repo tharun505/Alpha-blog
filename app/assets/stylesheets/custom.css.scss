@@ -53,24 +53,33 @@
         color: #777;
 }
 .footer small{
-  float: left;
-}
+              float: left;
+            }
+  
   .footer ul{
-    float : right;
-    list-style : none;
-  }
+              float : right;
+              list-style : none;
+              }
 .article-actions {
 
-border-top: 2px solid #eaeaea;
+                    border-top: 2px solid #eaeaea;
+                    padding-top: 2px;
+                  }
 
-padding-top: 5px;
-
+.article-title{
+  padding-top: 20px;
+  font-weight: bold ;
+  
 }
+.article-body{
+                    border-top: 2px solid #eaeaea;
+                    padding-top: 20px;
+                    padding-bottom: 20px ;
+}
+
 
 .description {
-
-margin-top: 0;
-
-}
+              margin-top: 0;
+              }
 
  
