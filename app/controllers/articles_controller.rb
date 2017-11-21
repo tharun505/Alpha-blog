@@ -13,7 +13,7 @@ before_action :set_article, only: [:edit, :show, :update, :destroy]
 
         @article = Article.new(article_params)
                 if @article.save
-                 flash.notice = "The article is succesfully created."
+                 flash[:success] = "The article is succesfully created."
                  redirect_to article_path(@article)
 
                 else 
@@ -36,7 +36,7 @@ before_action :set_article, only: [:edit, :show, :update, :destroy]
         if  @article.update(article_params)
          
         
-        flash.notice = "Article is succesfully updated"
+        flash[:success] = "Article is succesfully updated"
       
         redirect_to article_path(@article)
       else
@@ -57,7 +57,7 @@ before_action :set_article, only: [:edit, :show, :update, :destroy]
          
          @article.destroy
          redirect_to articles_path
-        flash.notice = "Article is successfully deleted"
+        flash[:danger] = "Article is successfully deleted"
         
         end
       
