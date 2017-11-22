@@ -1,3 +1,4 @@
+$navbar-default-bg: white;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -10,16 +11,15 @@
       
      }
      
-  .panel-title{
+.panel-title{
   
-  font-weight: bold;
+              font-weight: bold;
+            }  
+
+.center{
     
-    
-  }  
-  .center {
-    
-    text-align: center;
-  }
+        text-align: center;
+        }
   
 .jumbotron{
   background-image: asset-url('wallpaper-polygonal-colorful-abstract-1920-x-1080-full-hd');
@@ -40,6 +40,10 @@
 .btn-xlarge{
   font-size: 1.7em;
    font-family : "comic sans ms" ;
+}
+
+.about{
+  font-family : "comic sans ms" ;
 }
 
 .footer {
