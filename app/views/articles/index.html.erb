@@ -12,7 +12,7 @@
                  <div class="article-actions">
          
                     <%= link_to 'edit',edit_article_path(t),class: "btn btn-xs btn-success" %>
-                    <%= link_to 'delete',article_path(t),method: :destroy, 
+                    <%= link_to 'delete',article_path(t), method: :delete, 
                                         data: {confirm: "Are you sure to delete the article"} ,
                                          class: "btn btn-xs btn-danger" %>
                    </div>

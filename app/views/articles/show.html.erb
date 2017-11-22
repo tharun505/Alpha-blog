@@ -12,7 +12,7 @@
          
   <%= link_to 'back to list',articles_path,class: "btn btn-md btn-primary" %>
   <%= link_to 'edit',edit_article_path(@article),class: "btn btn-md btn-success" %>
-  <%= link_to 'delete',edit_article_path(@article),method: :destroy, data: {confirm: "Are you sure to delete the article"} ,class: "btn btn-md btn-danger" %>
+  <%= link_to 'delete',edit_article_path(@article),method: :delete, data: {confirm: "Are you sure to delete the article"} ,class: "btn btn-md btn-danger" %>
           </div>
   </div>
 
