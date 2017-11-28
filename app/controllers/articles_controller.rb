@@ -12,6 +12,7 @@ before_action :set_article, only: [:edit, :show, :update, :destroy]
 #render plain: params[:article].inspect
 
         @article = Article.new(article_params)
+        @article.user= User.first
                 if @article.save
                  flash[:success] = "The article is succesfully created."
                  redirect_to article_path(@article)
