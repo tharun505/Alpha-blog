@@ -7,6 +7,16 @@
           </div>
           <div class="article-body"> 
                 <%=truncate(t.description,length:100)%>
+                
+                <div class ="article-user-details">
+                  
+                  <small>
+                    Created by <%= t.user.username if t.user %>
+                    <%= time_ago_in_words(t.created_at)%> ago,
+                    Updated at: <%= time_ago_in_words(t.updated_at)%>
+                  </small>
+                  
+                </div>
           </div>      
   
                  <div class="article-actions">
