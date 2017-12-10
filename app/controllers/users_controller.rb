@@ -19,6 +19,31 @@ class UsersController < ApplicationController
   
   end
   
+  def edit
+      
+      @user = User.find(params[:id])
+      
+  end
+  
+  def update
+      @user = User.find(params[:id]) 
+      if @user.update(params_user)
+        redirect_to articles_path
+        flash[:success]= "Your account has been updated"
+        
+      else
+        render 'edit'
+      end
+  
+  end
+  
+  def show
+      @user=User.find(params[:id])
+    
+    
+  end
+    
+  
   private 
   
         def params_user
